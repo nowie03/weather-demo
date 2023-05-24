@@ -1,0 +1,89 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.future-forecast{
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: row;
+}
+
+.form-select{
+    margin-top: 5rem;
+    margin-left: 2rem;
+    max-width: 20rem;
+}
+
+
+.weather-card{
+    margin: 2rem;
+    display: flex;
+    min-width: 25rem;
+    overflow-y: hidden;
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 2rem;
+    transition: 0.3s ease-out;
+}
+
+.weather-card:hover,.weather-card-main:hover{
+    background-color: rgb(38, 155, 223);
+    color: white;
+}
+
+.weather-main-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card-main{
+    overflow-y: hidden;
+    max-width: 50rem;
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 2rem;
+    transition: 0.3s ease-out;
+    
+}
+
+.weather-stats-sec{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.weather-icon{
+    object-fit: contain;
+    width: 6rem;
+    height: 6rem;
+}
+
+.weather-icon:hover{
+    animation: shake 0.5s ease-out;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+::-webkit-scrollbar{
+    display:  none;
+}
+
+.heading{
+    margin: 2rem;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
